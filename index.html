@@ -1,0 +1,650 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+ <meta charset="UTF-8" />
+ <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+ <title>环球旅行站 — 发现世界之美</title>
+ <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+ <!-- ================= Header / Navigation ================= -->
+ <header class="site-header">
+ <nav class="nav" role="navigation" aria-label="主导航">
+ <a href="#" class="nav-brand">✈️ 环球旅行站</a>
+ <button class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="打开/关闭导航菜单">☰ 菜单</button>
+ <ul id="nav-list" class="nav-list">
+ <li><a href="#home">首页</a></li>
+ <li><a href="#destinations">热门目的地</a></li>
+ <li><a href="#routes">精选路线</a></li>
+ <li><a href="#inspiration">旅行灵感</a></li>
+ <li><a href="#contact">咨询表单</a></li>
+ </ul>
+ </nav>
+ </header>
+
+ <!-- ================= Hero Section ================= -->
+ <section id="home" class="hero">
+ <div class="hero-bg">
+ <div class="hero-overlay"></div>
+ <!-- Hero visual / imagery via inline SVG gradient pattern (fallback to CSS) -->
+ </div>
+ <div class="hero-content">
+ <h1>遇见世界的每一个转角</h1>
+ <p class="hero-subtitle">
+ 从极光之舞到撒哈拉星河，从威尼斯水城到京都古寺。<br />
+ 我们为您规划最动人的旅程，留下最难忘的回忆。
+ </p>
+ <a href="#routes" class="cta-button">探索精选路线 →</a>
+ </div>
+ </section>
+
+ <!-- ================= Destinations ================= -->
+ <section id="destinations" class="section">
+ <div class="container">
+ <h2 class="section-title">🌍 热门目的地</h2>
+ <p class="section-lead">
+ 精选全球六大最美目的地，每一处都是心动首选。
+ </p>
+
+ <div class="destinations-grid">
+ <!-- 1. 挪威 — 极光之城 -->
+ <article class="dest-card">
+ <div class="card-img">
+ <span class="img-placeholder" aria-hidden="true">
+ <!-- [P1] Inline SVG - Aurora City | Strong travel appeal -->
+ <svg viewBox="0 0 400 300" role="img" aria-label="挪威极光之城 — 绚丽极光在静谧峡湾上起舞，雪山倒映在黑蓝色的海面">
+ <!-- Northern Lights over fjords with snow-capped peaks -->
+ <defs>
+ <linearGradient id="auroraGrad" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0%" stop-color="#0B0F1C"/>
+ <stop offset="45%" stop-color="#1C2E4A" /> <!-- 极光开始 -->
+ <stop offset="52%" stop-color="#0B0F1C" />
+ <stop offset="58%" stop-color="#1C2E4A" />
+ <stop offset="65%" stop-color="#0B0F1C" />
+ <stop offset="72%" stop-color="#1C2E4A" />
+ <stop offset="80%" stop-color="#0B0F1C" />
+ <stop offset="100%" stop-color="#0F111A" />
+ </linearGradient>
+ <radialGradient id="moonGrad" cx="50%" cy="30%" r="35%">
+ <stop offset="0%" stop-color="#FDF5E6" stop-opacity="0.6"/>
+ <stop offset="40%" stop-color="#E6E1D8" stop-opacity="0.2"/>
+ <stop offset="100%" stop-color="#0B0F1C" stop-opacity="0"/>
+ </radialGradient>
+ </defs>
+ <!-- 山峦/峡湾轮廓 -->
+ <path d="M0,150 Q40,140 80,155 T160,145 T240,152 T320,148 T400,150" fill="none" stroke="url(#auroraGrad)" stroke-width="8"/>
+ <path d="M0,170 Q60,165 120,172 T240,168 T360,171" fill="none" stroke="url(#auroraGrad)" stroke-width="6" opacity="0.6"/>
+ <!-- 水天一色的极光带 -->
+ <ellipse cx="200" cy="155" rx="200" ry="80" fill="none" stroke="#0D5A8D" stroke-width="2" opacity="0.4"/>
+ <ellipse cx="200" cy="155" rx="220" ry="90" fill="none" stroke="#3A8BC6" stroke-width="1.5" opacity="0.25"/>
+ <ellipse cx="200" cy="155" rx="240" ry="95" fill="none" stroke="#2A7AC0" stroke-width="1" opacity="0.15"/>
+ <!-- 月亮 -->
+ <circle cx="320" cy="50" r="24" fill="url(#moonGrad)" filter="url(#moonGlow)"/>
+ <circle cx="300" cy="60" r="12" fill="#E6E1D8" opacity="0.5"/>
+ <!-- 水面的倒影（极光） -->
+ <ellipse cx="200" cy="185" rx="200" ry="60" fill="url(#auroraGrad)" opacity="0.12"/>
+ <ellipse cx="200" cy="185" rx="220" ry="66" fill="none" stroke="#1A4C6D" stroke-width="0.8" opacity="0.18"/>
+ </svg>
+ </span>
+ </div>
+ <div class="card-body">
+ <h3>挪威 · 极光之城</h3>
+ <p class="card-desc">
+ 当极光如火龙般在峡湾上舞，千年冰雪化作星河。奥斯陆午夜阳光、特罗姆瑟银河、罗弗敦光影，每一帧都在诉说极夜童话。
+ </p>
+ <ul class="card-features">
+ <li>📅 最佳时段：9–4 月（极夜璀璨，恰逢极光高活期）｜🌡️ 冰原与峡湾四季皆可</li>
+ <li>💡 灵感亮点：Rune 角石阵篝火夜、秘史峡湾玻璃顶斗奢夜宿</li>
+ </ul>
+ </div>
+ </article>
+
+ <!-- 2. 冰岛 · 孤独与重生 -->
+ <article class="dest-card">
+ <div class="card-img">
+ <span class="img-placeholder" aria-hidden="true">
+ <svg viewBox="0 0 400 300" role="img" aria-label="冰岛 — 冰川、地热与火山交织的孤独土地">
+ <defs>
+ <radialGradient id="cryoGrad" cx="30%" cy="40%" r="60%">
+ <stop offset="0%" stop-color="#FFF7E6" stop-opacity="0.65"/>
+ <stop offset="60%" stop-color="#1C2E4A" stop-opacity="0.4"/>
+ <stop offset="100%" stop-color="#0B0F1C" stop-opacity="0"/>
+ </radialGradient>
+ </defs>
+ <!-- 积雪火山与地热 -->
+ <ellipse cx="200" cy="120" rx="120" ry="140" fill="#0B0F1C" stroke="url(#cryoGrad)" stroke-width="2"/>
+ <ellipse cx="200" cy="120" rx="160" ry="180" fill="none" stroke="#2B3A52" stroke-width="1"/>
+ <!-- 地热与岩浆裂缝 -->
+ <rect x="120" y="95" width="40" height="30" fill="#1C0F0F" opacity="0.3"/>
+ <line x1="160" y1="70" x2="170" y2="55" stroke="#380F0F" stroke-width="2" opacity="0.5"/>
+ <line x1="170" y1="55" x2="165" y2="40" stroke="#481313" stroke-width="2" opacity="0.5"/>
+ <path d="M220,65 L230,50 L240,65 L250,52 L260,68 L270,55 L285,72 L300,80" fill="#1F0A0A" opacity="0.25"/>
+ <!-- 冰川与湖泊 -->
+ <path d="M0,260 C60,270 120,255 180,260 C240,265 300,250 400,260" fill="none" stroke="#5AA4DE" stroke-width="3" opacity="0.4"/>
+ <!-- 纹↓今琼色/极光融合 -->
+ <path d="M0,260 C100,265 180,250 260,262 C340,268 400,252 400,280" fill="url(#cryoGrad)" fill-opacity="0.25"/>
+ <path d="M0,260 C100,275 260,248 400,275" fill="none" stroke="#5C98F0" stroke-width="0.8" opacity="0.35"/>
+ </svg>
+ </span>
+ </div>
+ <div class="card-body">
+ <h3>冰岛 · 孤独与重生</h3>
+ <p class="card-desc">
+ 当冰川遇著地热，「冰与火之歌」在土地上回荡。黑沙滩的玄武岩柱、冰川车入蓝冰洞，蓝湖硫磺雾浪，每一刻都是自然壮丽的戏剧现场。
+ </p>
+ <ul class="card-features">
+ <li>📅 冰岛四时：极昼时8 月上中旬至 5 月下，蓝冰洞冬赏·雷克雅未克夜城</li>
+ <li>💡 灵感亮点：杰古沙龙冰河湖黑沙滩、钻石冰综拿孤独、冰河湖腹地野生动物（海豹/北极光）</li>
+ </ul>
+ </div>
+ </article>
+
+ <!-- 3. 京都 · 古寺禅意 -->
+ <article class="dest-card">
+ <div class="card-img">
+ <span class="img-placeholder" aria-hidden="true">
+ <svg viewBox="0 0 400 300" role="img" aria-label="京都 — 古寺深锁禅意，染鴿粉樱晕染，竹林雾锁">
+ <defs>
+ <clipPath id="templeClip"><circle cx="150" cy="180" r="160"/></clipPath>
+ <filter id="ninjaFilter"><feTurbulence type="fractalNoise" baseFrequency="0.04" numOctaves="4" result="noise"/><feDiffuseLighting in="noise" light="grad"/></filter>
+ <linearGradient id="wisteriaGrad" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0%" stop-color="#EAF2F5"/>
+ <stop offset="40%" stop-color="#D8E8F0" />
+ <stop offset="80%" stop-color="#B3D4E0" />
+ <stop offset="100%" stop-color="#91B5C8" />
+ </linearGradient>
+ </defs>
+ <!-- 夜空底部 -->
+ <rect x="0" y="100" width="400" height="200" fill="#090D16"/>
+ <!-- 月球虚影/寺顶 -->
+ <path d="M120,90 C130,70 145,60 160,65" fill="url(#wisteriaGrad)" fill-opacity="0.25" clip-path="url(#templeClip)"/>
+ <!-- 寺楼阁剪影 -->
+ <path d="M140,95 Q145,120 150,110 Q150,150 155,175 Q155,210 165,185 Q170,220 185,205" fill="#1B2430" clip-path="url(#templeClip)"/>
+ <!-- 水面倒影/烟霞 -->
+ <ellipse cx="150" cy="210" rx="120" ry="45" fill="url(#wisteriaGrad)" opacity="0.22"/>
+ <ellipse cx="150" cy="210" rx="150" ry="55" fill="none" stroke="#3D4F6B" stroke-width="0.6" opacity="0.15"/>
+ <!-- 水面波纹 -->
+ <path d="M150,210 Q200,205 250,215 T300,208" fill="none" stroke="url(#wisteriaGrad)" stroke-width="0.4" opacity="0.28"/>
+ <!-- 樱花/韭桔梅雨 -->
+ <ellipse cx="150" cy="80" rx="120" ry="20" fill="none" stroke="#D5E8F3" stroke-width="0.8" opacity="0.35"/>
+ <ellipse cx="150" cy="110" rx="150" ry="25" fill="none" stroke="#C7E1E0" stroke-width="0.4" opacity="0.28"/>
+ <!-- 登→水复波 -->
+ <path d="M150,80 L150,100" stroke="url(#wisteriaGrad)" stroke-width="1" opacity="0.35"/>
+ <!-- 垂泉—— -->
+ <ellipse cx="250" cy="110" rx="30" ry="12" fill="none" stroke="#6C8FAA" stroke-width="1" opacity="0.42"/>
+ <line x1="260" y1="108" x2="280" y2="120" stroke="#476484" stroke-width="1" opacity="0.35"/>
+ </svg>
+ </span>
+ </div>
+ <div class="card-body">
+ <h3>京都 · 古寺禅意</h3>
+ <p class="card-desc">
+ 若寂寺、清水寺、天龙寺，是朝圣的佛国；金阁寺、琉璃光寺，是精致的绘卷；岚山小川路风、宇治茶屋宇治抹茶、祇园艺妓，是看得见的生活。
+ </p>
+ <ul class="card-features">
+ <li>📅 樱樱暮色：3–5 月（樱花至泡桐）｜佛诞御节：7–8 月（放生/佛诞）｜冬雪京都：12–1 月（雪国情）</li>
+ <li>💡 灵感亮点：超然步森、祇园小径、宇治抹茶茶会、岚山夜樱灯会</li>
+ </ul>
+ </div>
+ </article>
+
+ <!-- 4. 摩洛哥 — 北非丝路 → 塔菲拉（北非丝路） -->
+ <article class="dest-card">
+ <div class="card-img">
+ <span class="img-placeholder" aria-hidden="true">
+ <svg viewBox="0 0 400 300" role="img" aria-label="摩洛哥 — 撒哈拉星空、热浪浪、织金唤沙">
+ <defs>
+ <radialGradient id="desertGrad" cx="80%" cy="50%" r="70%">
+ <stop offset="0%" stop-color="#FDE2D0" stop-opacity="0.55"/>
+ <stop offset="50%" stop-color="#F0D7C1" />
+ <stop offset="100%" stop-color="#D9B89F" />
+ </radialGradient>
+ <linearGradient id="starGradient" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0%" stop-color="#080D1B" />
+ <stop offset="40%" stop-color="#0D1A30" />
+ <stop offset="70%" stop-color="#122542" />
+ <stop offset="100%" stop-color="#050A17" />
+ </linearGradient>
+ </defs>
+ <!-- 星空/银河 -->
+ <rect x="0" y="0" width="400" height="150" fill="url(#starGradient)"/>
+ <line x1="100" y1="50" x2="300" y2="110" stroke="#5A6E8F" stroke-width="0.5" opacity="0.4"/>
+ <ellipse cx="300" cy="60" rx="40" ry="15" fill="url(#starGradient)" opacity="0.3"/>
+ <!-- 沙丘曲线 -->
+ <ellipse cx="200" cy="250" rx="160" ry="80" fill="none" stroke="#D6B291" stroke-width="3" opacity="0.35"/>
+ <ellipse cx="200" cy="250" rx="180" ry="90" fill="url(#desertGrad)" opacity="0.28"/>
+ <ellipse cx="200" cy="250" rx="180" ry="90" fill="url(#desertGrad)" opacity="0.22"/>
+ <!-- 骆驼队 -->
+ <path d="M280,160 L290,162 L305,158 L310,160" stroke="#6C3D28" stroke-width="2" fill="none" opacity="0.6"/>
+ <path d="M300,175 L308,178 L322,176 L330,179" stroke="#6C3D28" stroke-width="2" fill="none" opacity="0.6"/>
+ <!-- 热浪扭曲 -->
+ <path d="M0,250 Q50,240 100,255 T180,250" fill="none" stroke="#2E2A3D" stroke-width="0.3" opacity="0.18"/>
+ </svg>
+ </span>
+ </div>
+ <div class="card-body">
+ <h3>摩洛哥 — 北非丝路</h3>
+ <p class="card-desc">
+ 马拉喀什的红城、舍夫沙万的蓝巷、瓦纳卡塔的金色塔，是时间的指纹；撒哈拉星空、图菲拉的日落，是夜与风的交响；传统手艺、古兰经琴、薄荷茶，是情愫的散文诗。
+ </p>
+ <ul class="card-features">
+ <li>📅 绿洲/撒哈：4–6 月，9–11 月；摩洛哥旺季：3–6 月，9–11 月</li>
+ <li>💡 灵感亮点：马拉喀什梅纳尔集市、瓦纳卡塔金色塔、图菲拉日落夕霞、舍夫沙万蓝街漫步</li>
+ </ul>
+ </div>
+ </article>
+
+ <!-- 5. 新西兰 — 纯净大地 -->
+ <article class="dest-card">
+ <div class="card-img">
+ <span class="img-placeholder" aria-hidden="true">
+ <svg viewBox="0 0 400 300" role="img" aria-label="新西兰 — 冰川峡湾、灵鸟、星空下的毛皮">
+ <defs>
+ <radialGradient id="nzGrad" cx="50%" cy="50%" r="40%">
+ <stop offset="0%" stop-color="#EAF2E9"/>
+ <stop offset="60%" stop-color="#BDD5E2" />
+ <stop offset="100%" stop-color="#8CAAC6" />
+ </radialGradient>
+ </defs>
+ <!-- 冰川/山 -->
+ <path d="M0,250 L200,100 L350,140 L400,250" fill="none" stroke="url(#nzGrad)" stroke-width="4" opacity="0.4"/>
+ <path d="M0,265 L180,90 L340,155 L400,268" fill="url(#nzGrad)" fill-opacity="0.25"/>
+ <!-- 峡湾水域/瀑布 -->
+ <ellipse cx="150" cy="240" rx="80" ry="20" fill="#8CAAC6" fill-opacity="0.18"/>
+ <ellipse cx="280" cy="240" rx="60" ry="18" fill="#5AA4DE" fill-opacity="0.22"/>
+ <!-- 灵鸟毛皮 -->
+ <circle cx="60" cy="230" r="18" fill="#2B4A3A" opacity="0.45"/>
+ <circle cx="140" cy="235" r="22" fill="#1F392D" opacity="0.4"/>
+ <!-- 星空 -->
+ <path d="M0,0 Q100,0 200,50" fill="url(#starGradient)" opacity="0.18"/>
+ </svg>
+ </span>
+ </div>
+ <div class="card-body">
+ <h3>新西兰 — 纯净大地</h3>
+ <p class="card-desc">
+ 哈灵顿车站的毛皮、皇后镇的冰川、蒂普亚山的星空，是新西兰的三大宝藏；库克航空的银鸟、纽西兰航空的海鸥，是新西兰的两大明星；每件事都在向世界宣告：这是一片纯净的大地。
+ </p>
+ <ul class="card-features">
+ <li>📅 四季如景：夏 12–2 月；西峡湾：8–11 月；好：全年皆宜</li>
+ <li>💡 灵感亮点：基督城毛皮（乔治王角）、哈灵顿车站铁路桥、皇后镇冰川、蒂普亚山星空</li>
+ </ul>
+ </div>
+ </article>
+
+ <!-- 6. 罗马 — 永恒之城 -->
+ <article class="dest-card">
+ <div class="card-img">
+ <span class="img-placeholder" aria-hidden="true">
+ <svg viewBox="0 0 400 300" role="img" aria-label="罗马 — 永恒之城，梵蒂冈的圣光，台伯河的波光，水手宫">
+ <defs>
+ <radialGradient id="romeGrad" cx="40%" cy="60%" r="60%">
+ <stop offset="0%" stop-color="#F8EAD7"/>
+ <stop offset="40%" stop-color="#E6D7B6" />
+ <stop offset="100%" stop-color="#C8A67E" />
+ </radialGradient>
+ <linearGradient id="topGradient" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0%" stop-color="#0C101E"/>
+ <stop offset="50%" stop-color="#151D2E" />
+ <stop offset="85%" stop-color="#243147" />
+ </linearGradient>
+ </defs>
+ <!-- 穹顶 -->
+ <ellipse cx="100" cy="90" rx="60" ry="30" fill="url(#topGradient)" opacity="0.8"/>
+ <ellipse cx="100" cy="90" rx="60" ry="30" fill="url(#topGradient)" opacity="0.3"/>
+ <ellipse cx="100" cy="90" rx="85" ry="25" fill="url(#romeGrad)" opacity="0.6"/>
+ <ellipse cx="100" cy="90" rx="85" ry="25" fill="url(#romeGrad)" opacity="0.45"/>
+ <!-- 阳光 -->
+ <ellipse cx="100" cy="90" rx="110" ry="40" fill="url(#romeGrad)" fill-opacity="0.22"/>
+ <ellipse cx="100" cy="90" rx="140" ry="50" fill="none" stroke="#5A6E8F" stroke-width="0.4" opacity="0.12"/>
+ <!-- 树木 -->
+ <ellipse cx="320" cy="140" rx="30" ry="12" fill="#2F4A38" opacity="0.5"/>
+ <ellipse cx="350" cy="145" rx="24" ry="10" fill="#3A5644" opacity="0.55"/>
+ <!-- 水手宫 -->
+ <ellipse cx="150" cy="200" rx="80" ry="40" fill="#1B283C" opacity="0.3"/>
+ <ellipse cx="150" cy="200" rx="80" ry="40" fill="url(#romeGrad)" opacity="0.18"/>
+ <ellipse cx="150" cy="200" rx="80" ry="40" fill="url(#romeGrad)" opacity="0.12"/>
+ <!-- 台伯河波 -->
+ <ellipse cx="150" cy="245" rx="100" ry="15" fill="url(#topGradient)" fill-opacity="0.25"/>
+ <ellipse cx="150" cy="245" rx="120" ry="18" fill="url(#topGradient)" fill-opacity="0.18"/>
+ <ellipse cx="150" cy="245" rx="140" ry="22" fill="none" stroke="#5A6E8F" stroke-width="0.5" opacity="0.12"/>
+ </svg>
+ </span>
+ </div>
+ <div class="card-body">
+ <h3>罗马 — 永恒之城</h3>
+ <p class="card-desc">
+ 梵蒂冈圣光照亮时光，台伯河波光映镇，万神殿、斗兽场、百花大教堂，是古典之影；西班牙广场、特莱维喷泉，是市井之欢；巴洛克、文艺复兴、现代，是时光之流。
+ </p>
+ <ul class="card-features">
+ <li>📅 全年皆宜；4–6 月、9–11 月最佳；夏季 7–8 月较炎热</li>
+ <li>💡 灵感亮点：梵蒂冈博物馆、特莱维喷泉许愿、斗兽场夜游、万神殿穹顶</li>
+ </ul>
+ </div>
+ </article>
+
+ <!-- 7. 巴厘岛 — 伊西沙湾 -->
+ <article class="dest-card">
+ <div class="card-img">
+ <span class="img-placeholder" aria-hidden="true">
+ <svg viewBox="0 0 400 300" role="img" aria-label="巴厘岛 — 伊西沙湾：青沙白屋红椰子">
+ <defs>
+ <linearGradient id="baliGrad" x1="0" y1="0" x2="0" y2="1">
+ <stop offset="0%" stop-color="#0C101E"/>
+ <stop offset="30%" stop-color="#151D2E" />
+ <stop offset="60%" stop-color="#2A3B53" />
+ <stop offset="100%" stop-color="#3F516B" />
+ </linearGradient>
+ <radialGradient id="islandGrad" cx="50%" cy="50%" r="60%">
+ <stop offset="0%" stop-color="#F5E6D9"/>
+ <stop offset="50%" stop-color="#E8D9C7" />
+ <stop offset="100%" stop-color="#D7C6B2" />
+ </radialGradient>
+ </defs>
+ <!-- 海洋 -->
+ <rect x="0" y="0" width="400" height="180" fill="url(#baliGrad)"/>
+ <!-- 水波纹 → 有 -->
+ <path d="M0,0 Q60,20 100,0 T240,20 T380,0" fill="none" stroke="#5F7590" stroke-width="0.6" opacity="0.4"/>
+ <path d="M0,40 Q70,60 110,40 T250,60 T390,40" fill="none" stroke="#5F7590" stroke-width="0.5" opacity="0.35"/>
+ <path d="M0,80 Q80,100 120,80 T260,100 T400,80" fill="none" stroke="#5F7590" stroke-width="0.45" opacity="0.3"/>
+ <!-- 岛—— -->
+ <ellipse cx="120" cy="190" rx="90" ry="45" fill="url(#islandGrad)" opacity="0.35"/>
+ <ellipse cx="120" cy="190" rx="90" ry="45" fill="url(#islandGrad)" opacity="0.22"/>
+ <!-- 落日/太阳—— -->
+ <circle cx="350" cy="150" r="24" fill="#FDE2D0" fill-opacity="0.6"/>
+ <circle cx="340" cy="160" r="12" fill="#E8D9C7" fill-opacity="0.4"/>
+ <!-- 椰子/棕榈树—— -->
+ <ellipse cx="250" cy="180" rx="20" ry="8" fill="#D1A36E" opacity="0.6"/>
+ <ellipse cx="280" cy="178" rx="16" ry="7" fill="#C59461" opacity="0.55"/>
+ <!-- 楼梯/码头—— -->
+ <path d="M260,160 L265,158 L280,161 L285,159 L300,162 L305,160" stroke="#5F7590" stroke-width="2" fill="none" opacity="0.45"/>
+ </svg>
+ </span>
+ </div>
+ <div class="card-body">
+ <h3>巴厘岛 — 伊西沙湾</h3>
+ <p class="card-desc">
+ 青沙白屋红椰子，伊西沙湾的傍晚；青沙白屋红椰子，伊西沙湾的清晨；青沙白屋红椰子，伊西沙湾的中午；青沙白屋红椰子，伊西沙湾的夜晚；伊西沙湾的美，是白昼的诗意，是夜晚的浪漫。
+ </p>
+ <ul class="card-features">
+ <li>📅 4–6 月、9–11 月最佳；全年可游（雨季 11–3 月，旱季 4–10 月）</li>
+ <li>💡 灵感亮点：乌布皇宫日、文化体验、丛林探险、星空露营、冲浪、瑜伽冥想</li>
+ </ul>
+ </div>
+ </article>
+ </div>
+ </section>
+
+ <!-- ================= Routes ================= -->
+ <section id="routes" class="section">
+ <div class="container">
+ <h2 class="section-title">🗺️ 精选路线</h2>
+ <p class="section-lead">
+ 三大主题路线，将您带往世界的每一个角落。
+ </p>
+
+ <div class="routes-list">
+ <!-- 1. 极光探索之旅 -->
+ <article class="route-card">
+ <div class="route-header">
+ <h3>🌌 极光探索之旅</h3>
+ <span class="route-badge">6 天 5 夜</span>
+ </div>
+ <div class="route-content">
+ <p class="route-desc">
+ 从特罗姆瑟出发，深入北极圈内，拜访芬兰极光之都拉普兰、挪威首都奥斯陆，感受极光的每一次舞动。
+ </p>
+ <ul class="route-highlights">
+ <li>🌍 覆盖：挪威（奥斯陆）、芬兰（赫尔辛基）、瑞典（斯德哥尔摩）、冰岛（雷克雅未克）｜📍 交通：飞机/火车/汽车</li>
+ <li>🌌 亮点：极夜极光、破冰船、地热温泉、古堡遗址、极光玻璃穹顶、峡湾冰川、冰岛黑沙滩、冰河湖冰洞</li>
+ <li>👁️ 体验：烛光晚餐、极夜徒步、地热温泉、极光摄影、桑拿浴、篝火舞、冰川徒步、缆车/冰川/铁路</li>
+ </ul>
+ <div class="route-travel">
+ <h4>📋 旅程亮点</h4>
+ <ul class="route-travel-list">
+ <li>🌌 <strong>极夜体验：</strong> 体验拉普兰的极夜与极光，感受冰原的寒冷与极光的美丽，是极夜旅游的最佳选择。</li>
+ <li>🚄 <strong>冰岛铁路：</strong> 从雷克雅未克出发，乘坐冰岛的铁路，沿途欣赏冰岛的壮丽风光，感受冰岛的悠闲生活。</li>
+ <li>🏔️ <strong>冰川徒步：</strong> 从雷克雅未克出发，乘坐缆车到冰岛的冰川，进行冰川徒步，欣赏冰岛的壮丽风光。</li>
+ </ul>
+ </div>
+ </div>
+ </article>
+
+ <!-- 2. 丝路朝圣之路 -->
+ <article class="route-card">
+ <div class="route-header">
+ <h3>🕌 丝路朝圣之路</h3>
+ <span class="route-badge">8 天 7 夜</span>
+ </div>
+ <div class="route-content">
+ <p class="route-desc">
+ 从伊朗出阿巴斯，历经阿富汗、巴基斯坦、印度，探访中亚古城，感受丝路文化的历史魅力。
+ </p>
+ <ul class="route-highlights">
+ <li>🌍 覆盖：伊朗（阿巴斯、马拉维尔德）、阿富汗（赫拉特）、巴基斯坦（开伯尔公路）、印度（新德里、瓦拉纳西）｜📍 交通：火车/汽车/飞机</li>
+ <li>🕌 亮点：阿巴斯古城、马拉维尔德市集、赫拉特古城、开伯尔公路、新德里红堡、瓦拉纳西恒河、丝绸之路古城群</li>
+ <li>👁️ 体验：古兰经琴、香料集市、宗教仪式、考古遗址、恒河沐浴、丝绸之路古城群</li>
+ </ul>
+ <div class="route-travel">
+ <h4>📋 旅程亮点</h4>
+ <ul class="route-travel-list">
+ <li>🏛️ <strong>古遗址体验：</strong> 探访古丝绸之路上的古城遗址，感受丝路文化的历史魅力，是文化旅游的最佳选择。</li>
+ <li>🕌 <strong>恒河沐浴：</strong> 从新德里出发，前往瓦拉纳西，在恒河沐浴，感受宗教仪式的神秘与庄严，是宗教文化体验的最佳选择。</li>
+ <li>🌌 <strong>夜游古城：</strong> 从新德里出发，前往开伯尔公路，夜游古城，感受丝路的夜晚氛围，是夜游体验的最佳选择。</li>
+ </ul>
+ </div>
+ </div>
+ </article>
+
+ <!-- 3. 纯净大地之旅 -->
+ <article class="route-card">
+ <div class="route-header">
+ <h3>🐏 纯净大地之旅</h3>
+ <span class="route-badge">9 天 8 夜</span>
+ </div>
+ <div class="route-content">
+ <p class="route-desc">
+ 从纽约出发，经坐腾格尔机场，探访纽约大都市、华盛顿特区、芝加哥城市、纽约乡，感受美国城市的繁华与乡村的宁静。
+ </p>
+ <ul class="route-highlights">
+ <li>🌍 覆盖：美国纽约、华盛顿特区、芝加哥城市、纽约乡村｜📍 交通：飞机/汽车</li>
+ <li>🐏 亮点：尼亚加拉大瀑布、自由女神像、白宫、芝加哥大都会艺术博物馆、中央公园、尼亚加拉大瀑布观景台</li>
+ <li>👁️ 体验：城市漫步、博物馆参观、尼亚加拉大瀑布、尼亚加拉大瀑布徒步、尼亚加拉大瀑布观星、尼亚加拉大瀑布摄影</li>
+ </ul>
+ <div class="route-travel">
+ <h4>📋 旅程亮点</h4>
+ <ul class="route-travel-list">
+ <li>🐏 <strong>尼亚加拉大瀑布：</strong> 从纽约出发，前往尼亚加拉大瀑布，欣赏尼亚加拉大瀑布的壮观景象，是自然奇观体验的最佳选择。</li>
+ <li>🏛️ <strong>城市漫步：</strong> 从芝加哥出发，探访纽约城市，欣赏纽约的繁华与优雅，是城市漫步的最佳选择。</li>
+ <li>🏔️ <strong>尼亚加拉大瀑布：</strong> 从芝加哥出发，前往尼亚加拉大瀑布，欣赏尼亚加拉大瀑布的壮观景象，是自然奇观体验的最佳选择。</li>
+ </ul>
+ </div>
+ </div>
+ </article>
+ </div>
+ </section>
+
+ <!-- ================= Inspiration ================= -->
+ <section id="inspiration" class="section">
+ <div class="container">
+ <h2 class="section-title">✨ 旅行灵感</h2>
+ <p class="section-lead">
+ 来自世界各地的旅行者分享他们的故事与灵感，照亮您的旅程。
+ </p>
+
+ <div class="inspiration-grid">
+ <!-- 1. 星空下的毛皮 -->
+ <article class="inspiration-card">
+ <div class="insp-card-content">
+ <h4>🐏 星空下的毛皮</h4>
+ <p>
+ 毛皮（Whales）与暹罗猫一样，是新广岛的象征。它们全年可见，但冬季最为活跃，此时它们的毛皮最为美丽，皮毛最为厚实。
+ </p>
+ <blockquote class="insp-quote">
+ "在库克盐湖（Cook Islands）的毛皮，是新西兰最独特的风景之一。它们在海面上游弋，与洁白的浪花、湛蓝的海水融为一体，仿佛是一幅流动的油画。"
+ </blockquote>
+ <div class="insp-meta">
+ <span>📍 新西兰 · 库克盐湖</span>
+ <span>📅 2026 年 9 月</span>
+ </div>
+ </div>
+ </article>
+
+ <!-- 2. 京都古寺 -->
+ <article class="inspiration-card">
+ <div class="insp-card-content">
+ <h4>🏯 京都古寺</h4>
+ <p>
+ 京都的寺庙不仅是宗教场所，更是历史与艺术的交汇点。它们见证了无数个朝圣者的足迹，也承载了日本人的精神信仰。
+ </p>
+ <blockquote class="insp-quote">
+ "若寂寺的幽静、天龙寺的竹林、龙安寺的枯山水，每一座寺庙都是一首诗，每一个转角都是一幅画。"
+ </blockquote>
+ <div class="insp-meta">
+ <span>📍 日本 · 京都</span>
+ <span>📅 2026 年 10 月</span>
+ </div>
+ </div>
+ </article>
+
+ <!-- 3. 撒哈拉星空 -->
+ <article class="inspiration-card">
+ <div class="insp-card-content">
+ <h4>🌌 撒哈拉星空</h4>
+ <p>
+ 在撒哈拉沙漠的夜空下，星河流淌，银河璀璨。这里的星空与城市截然不同，每一次仰望都是一次心灵的震撼。
+ </p>
+ <blockquote class="insp-quote">
+ "在图菲拉的沙漠营地里，我们躺在厚厚的棉被中，看着头顶的星河。那一刻，所有的烦恼都消失了，只剩下纯净的宁静与美好。"
+ </blockquote>
+ <div class="insp-meta">
+ <span>📍 摩洛哥 · 撒哈拉</span>
+ <span>📅 2026 年 10 月</span>
+ </div>
+ </div>
+ </article>
+
+ <!-- 4. 罗马永恒 -->
+ <article class="inspiration-card">
+ <div class="insp-card-content">
+ <h4>🏛️ 罗马永恒</h4>
+ <p>
+ 在罗马的每一条街道，每一座建筑，每一块石板下，都埋藏着无数的历史与故事。这座永恒之城，永远不会老去。
+ </p>
+ <blockquote class="insp-quote">
+ "梵蒂冈的圣光、台伯河的波光、万神殿的穹顶、斗兽场的砖石，每一处都是历史的见证，每一处都是艺术的瑰宝。"
+ </blockquote>
+ <div class="insp-meta">
+ <span>📍 意大利 · 罗马</span>
+ <span>📅 2026 年 10 月</span>
+ </div>
+ </div>
+ </article>
+
+ <!-- 5. 伊西沙湾 -->
+ <article class="inspiration-card">
+ <div class="insp-card-content">
+ <h4>🏝️ 伊西沙湾</h4>
+ <p>
+ 伊西沙湾的傍晚，是巴厘岛最美的时刻。当夕阳西下，海面泛起金色的波光，整个海湾仿佛变成了一片金色的海洋。
+ </p>
+ <blockquote class="insp-quote">
+ "青沙白屋红椰子，伊西沙湾的日落，是巴厘岛最浪漫的风景。"
+ </blockquote>
+ <div class="insp-meta">
+ <span>📍 印度尼西亚 · 巴厘岛</span>
+ <span>📅 2026 年 10 月</span>
+ </div>
+ </div>
+ </article>
+
+ <!-- 6. 冰岛蓝冰洞 -->
+ <article class="inspiration-card">
+ <div class="insp-card-content">
+ <h4>🧊 冰岛蓝冰洞</h4>
+ <p>
+ 蓝冰洞是冰岛冬季最独特的自然奇观。它们由冰川融化形成，呈现出深蓝色的内部，如同一个巨大的水晶洞穴。
+ </p>
+ <blockquote class="insp-quote">
+ "在蓝冰洞中，你可以近距离接触冰川，感受冰层的坚硬与寒冷，同时欣赏冰洞内部的蓝色光芒，这是一次难忘的体验。"
+ </blockquote>
+ <div class="insp-meta">
+ <span>📍 冰岛 · 杰古沙龙冰河</span>
+ <span>📅 2026 年 10 月</span>
+ </div>
+ </div>
+ </article>
+ </div>
+ </section>
+
+ <!-- ================= Contact Form ================= -->
+ <section id="contact" class="section">
+ <div class="container">
+ <h2 class="section-title">✈️ 咨询表单</h2>
+ <p class="section-lead">
+ 与我们聊聊，分享您的旅行计划。我们会回复每一份咨询。
+ </p>
+
+ <form id="contact-form" novalidate>
+ <!-- 6 个目的地 → 4 个字段 （里程碑、预算、日期、偏好） -->
+ <div class="form-group">
+ <label for="trip-milestone">里程碑（如何旅行）</label>
+ <select id="trip-milestone" name="trip-milestone" required>
+ <option value="">请选择里程碑（如何旅行）……</option>
+ <option value="solo">独自出发 ✈️ 自由行</option>
+ <option value="couple">情侣同行 💑 浪漫之旅</option>
+ <option value="family">亲子出游 👶 亲子游</option>
+ <option value="group">团队行程 🚌 旅行团</option>
+ </select>
+ </div>
+
+ <div class="form-group">
+ <label for="budget">预算（RMB/每位）</label>
+ <input type="number" id="budget" name="budget" placeholder="例如：8000" />
+ </div>
+
+ <div class="form-group">
+ <label for="travel-date">出发日期</label>
+ <input type="date" id="travel-date" name="travel-date" />
+ </div>
+
+ <div class="form-group">
+ <label for="destination-preference">目的地偏好</label>
+ <input type="text" id="destination-preference" name="destination-preference" placeholder="例如：冰岛、京都" />
+ </div>
+ </form>
+
+ <!-- 6 个目的地对应：
+ - 1 → 挪威（极光）
+ - 2 → 冰岛（冰川）
+ - 3 → 京都（古寺）
+ - 4 → 摩洛哥（撒哈拉）
+ - 5 → 新西兰（纯净）
+ - 6 → 罗马（永恒）
+ 
+ 4 个字段对应：
+ - milestone → 行程类型
+ - budget → 预算
+ - date → 出发日期
+ - preference → 目的地偏好
+ -->
+ </div>
+ </section>
+
+ <!-- ================= Footer ================= -->
+ <footer class="site-footer">
+ <div class="footer-top">
+ <p class="footer-quote">
+ "旅行是瞬间的明亮，经久的难忘。"
+ </p>
+ <p class="footer-copyright">
+ &copy; 2026 环球旅行站 · 保留所有权 · 本站致力于提供高质量旅行咨询 · 
+ <span class="footer-lang">Language <span id="lang-toggle">EN</span></span>
+ </p>
+ </div>
+ <div class="footer-bottom">
+ <p class="footer-slogan">探索世界 · 遇见美好 · 创造回忆</p>
+ </div>
+ </footer>
+</body>
+</html>
